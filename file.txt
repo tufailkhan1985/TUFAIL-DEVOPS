@@ -1,0 +1,74 @@
+{
+  "version": 4,
+  "terraform_version": "1.4.2",
+  "serial": 30,
+  "lineage": "e402a83a-4379-6a53-6d18-75967123efc0",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "azurerm_resource_group",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "/subscriptions/5ed64250-2224-440b-8ef8-3b7c68cac6d2/resourceGroups/app-grp",
+            "location": "westeurope",
+            "name": "app-grp",
+            "tags": {},
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo1NDAwMDAwMDAwMDAwLCJkZWxldGUiOjU0MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjo1NDAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_virtual_network",
+      "name": "appnetwork",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "address_space": [
+              "10.0.0.0/16"
+            ],
+            "bgp_community": "",
+            "ddos_protection_plan": [],
+            "dns_servers": [],
+            "edge_zone": "",
+            "flow_timeout_in_minutes": 0,
+            "guid": "f2ad55a6-7334-468d-9881-9b14891e6814",
+            "id": "/subscriptions/5ed64250-2224-440b-8ef8-3b7c68cac6d2/resourceGroups/app-grp/providers/Microsoft.Network/virtualNetworks/app-network",
+            "location": "northeurope",
+            "name": "app-network",
+            "resource_group_name": "app-grp",
+            "subnet": [
+              {
+                "address_prefix": "10.0.0.0/24",
+                "id": "/subscriptions/5ed64250-2224-440b-8ef8-3b7c68cac6d2/resourceGroups/app-grp/providers/Microsoft.Network/virtualNetworks/app-network/subnets/subnetA",
+                "name": "subnetA",
+                "security_group": ""
+              },
+              {
+                "address_prefix": "10.0.1.0/24",
+                "id": "/subscriptions/5ed64250-2224-440b-8ef8-3b7c68cac6d2/resourceGroups/app-grp/providers/Microsoft.Network/virtualNetworks/app-network/subnets/subnetB",
+                "name": "subnetB",
+                "security_group": ""
+              }
+            ],
+            "tags": null,
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
